@@ -1,0 +1,45 @@
+/*PC mode*/
+html, body{
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  #checkbox{
+     position: absolute;
+    top: 55px;
+    right: 1.5%;
+    font-size:12px;
+    padding: 8px;
+    background: white;
+    border-radius: 10px;
+    opacity: 0.8;
+      }
+
+  #latlong{
+      position: absolute;
+      bottom:5%;
+      left: 52%;
+      border-radius: 10px;
+      padding: 8px;
+      opacity: 0.8;
+      background: white;
+      }
+
+  #pano, #viewDiv  {
+      float: right;
+      height: 100%;
+      width: 50%;
+    }
+
+#legend2 {
+    position: absolute;
+    top: 80px;
+    left: 2.5%;
+      }
+
+
+/*Mobile Mode*/
+
+

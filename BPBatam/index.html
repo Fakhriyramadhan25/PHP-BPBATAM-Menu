@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BP Batam</title>
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" href="ui.css">
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.16/esri/themes/light/main.css"/>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW4PvMrGlBC7keYWx-RyFebMF9CY5ZKFE&callback=initialize&libraries=&v=weekly" defer>
+    </script>
+
+    </head>
+
+
+<body>
+
+    <script src="https://js.arcgis.com/4.16/"></script>
+    <script src="arcgis.js"></script>
+    <script src="google.js"></script>
+
+    <div id="viewDiv">
+
+
+    <div id="checkbox">
+    <span class="esri-widget">
+      <input type="checkbox" id="swplayer" /> Data SWP
+    </span>
+    <br>
+
+    <span class="esri-widget">
+      <input type="checkbox" id="jalanlayer" /> Jalan Batam
+    </span>
+    <br>
+
+    <span class="esri-widget">
+      <input type="checkbox" id="hutanlayer" /> Hutan Batam
+    </span>
+
+    </div>
+    <div id="legend2"> </div>
+    <div id="latlong"></div>
+
+    </div>
+
+   <div id="map"></div>
+   <div id="pano"></div>
+
+</body>
+
+
+</html>
