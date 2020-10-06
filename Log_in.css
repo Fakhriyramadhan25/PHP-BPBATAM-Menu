@@ -1,3 +1,15 @@
+.masuk {
+  size: 100;
+  position: relative;
+  left: 5px;
+}
+
+.hurup{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 .mediaViewInfo {
 		--web-view-name: Log in;
 		--web-view-id: Log_in;
@@ -580,6 +592,4 @@
 		top: 69.796px;
 	}
 
-.masuk {
-  size: 50;
-}
+
