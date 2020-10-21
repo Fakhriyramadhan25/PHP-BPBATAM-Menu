@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Log in</title>
 
+<link rel="icon" href="LOGO/icon2.jpg">
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Log_in.css"/>
@@ -32,33 +34,36 @@
 		<rect id="Rectangle_6" rx="43.5" ry="43.5" x="0" y="0" width="503" height="87">
 		</rect>
 	</svg>
-	<div id="Username">
-		<span>Username</span>
-        <form class="masuk">
-          <br>
-            <br>
-            <input type="text" id="fname" name="fname" class="hurup">
-        </form>
-	</div>
-	<div id="Password_">
-		<span>Password </span>
-        <form class="masuk">
-          <br>
-            <br>
-            <input type="password" id="password" name="password" class="hurup">
-        </form>
-	</div>
-	<div id="Group_75">
+
+    <div id="Group_75">
 		<div id="Group_7">
 			<svg class="Rectangle_8">
 				<rect id="Rectangle_8" rx="25.5" ry="25.5" x="0" y="0" width="104" height="51">
 				</rect>
 			</svg>
 		</div>
-		<div onclick="application.goToTargetView(event)" id="Log_in_w">
-			<span>Log in</span>
-		</div>
+
 	</div>
+	<div id="Username">
+		<span>Username</span>
+	</div>
+	 <div id="Password_">
+		<span>Password </span>
+        <form method="post" action="login.php" class="masuk">
+            <input type="text" id="hurup" name="Username" placeholder="Username" required>
+          <br>
+            <br>
+            <input type="password" id="hurup2" name="Password" placeholder="Password" required>
+
+          <br>
+            <br>
+            <input type="submit" value="Log in" id="Log_in_w">
+        </form>
+
+	</div>
+
+
+
 	<div onclick="application.goToTargetView(event)" id="Group_37">
 		<div id="Forgot_Password__">
 			<span>Forgot Password  </span>
@@ -72,9 +77,11 @@
 		<img id="sign_up" src="sign_up.png" srcset="sign_up.png 1x, sign_up@2x.png 2x">
 	</div>
 	<img id="bp-batam-logo-3352E5183A-seekl" src="bp-batam-logo-3352E5183A-seekl.png" srcset="bp-batam-logo-3352E5183A-seekl.png 1x, bp-batam-logo-3352E5183A-seekl@2x.png 2x">
+<!--
 	<div id="Login_Account">
 		<span>Login Account</span>
 	</div>
+-->
 	<img onclick="application.goToTargetView(event)" id="back" src="back.png" srcset="back.png 1x, back@2x.png 2x">
 	<div id="Group_45">
 		<svg class="Path_167" viewBox="814.681 537.676 143.045 111.904">

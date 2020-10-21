@@ -1,3 +1,30 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: Log_in.html');
+	exit;
+}
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'mysql';
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if (mysqli_connect_errno()) {
+	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+// We don't have the password or email info stored in sessions so instead we can get the results from the database.
+$stmt = $con->prepare('SELECT Password, Email, Fullname FROM portalspasial WHERE ID = ?');
+// In this case we can use the account ID to get the account info.
+$stmt->bind_param('i', $_SESSION['ID']);
+$stmt->execute();
+$stmt->bind_result($Password, $Email, $Fullname);
+$stmt->fetch();
+$stmt->close();
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -85,10 +112,10 @@
 		</rect>
 	</svg>
 	<div id="Katy_Perry">
-		<span>Katy Perry</span>
+		<span><?=$Fullname?></span>
 	</div>
 	<div id="Katy2020">
-		<span>Katy2020</span>
+		<span><?=$_SESSION['name']?></span>
 	</div>
 	<div id="Full_Maps">
 		<span>Full Maps</span>
@@ -100,7 +127,7 @@
 		<span>Password</span>
 	</div>
 	<div id="Verify_pass">
-		<span>Verify pass</span>
+		<span>Email</span>
 	</div>
 	<svg class="Rectangle_19">
 		<rect id="Rectangle_19" rx="22" ry="22" x="0" y="0" width="252" height="44">
@@ -111,10 +138,10 @@
 		</rect>
 	</svg>
 	<div id="_bk">
-		<span>*********</span>
+		<span><?=$Password?></span>
 	</div>
 	<div id="_bl">
-		<span>*********</span>
+		<span><?=$Email?></span>
 	</div>
 	<div id="Group_43">
 		<svg class="Path_138" viewBox="600.124 628.638 32.021 48.746">

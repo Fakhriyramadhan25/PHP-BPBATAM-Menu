@@ -4,11 +4,22 @@
   left: 5px;
 }
 
-.hurup{
-    font-size: 20px;
+#hurup{
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
-
+    width: 400px;
+    position: absolute;
+    bottom: 159px;
 }
+
+#hurup2{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    position: absolute;
+}
+
+
 
 .mediaViewInfo {
 		--web-view-name: Log in;
@@ -168,12 +179,12 @@
 		left: 0px;
 		top: 0px;
 	}
+
 	#Log_in_w {
-		left: 25px;
-		top: 11px;
+		left: 187px;
+		top: 128px;
 		position: absolute;
 		overflow: visible;
-		width: 56px;
 		white-space: nowrap;
 		--web-animation: fadein 0.3s ease-out;
 		--web-action-type: page;
@@ -183,9 +194,17 @@
 		font-family: Segoe UI;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 20px;
+		font-size: 24px;
 		color: rgba(255,255,255,1);
+        background-color: rgba(0,0,0,0);
+        padding: 6px;
 	}
+
+    #Log_in_w:hover {
+		color: black;
+	}
+
+
 	#Group_37 {
 		position: absolute;
 		width: 178px;
@@ -198,6 +217,8 @@
 		--web-action-target: Forgot_Password.html;
 		cursor: pointer;
 	}
+
+
 	#Forgot_Password__ {
 		left: 0px;
 		top: 0px;
@@ -263,7 +284,7 @@
 		overflow: visible;
 	}
 	#Login_Account {
-		left: 833px;
+		left: 50px;
 		top: 187px;
 		position: absolute;
 		overflow: visible;

@@ -2044,11 +2044,31 @@ html,body,head {
 .dropbtn:hover, .dropbtn:focus {
   border-radius: 20px;
   background-color: rgba(255,216,96,1);
+  color: rgba(255,216,96,0.6)
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.dropdown .profil{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: Segoe UI;
+left: 1730px;
+  top: 142px;
+    position: absolute;
+
+}
+
+.dropdown:hover .profil {
+  visibility: visible;
 }
 
 .dropdown-content {

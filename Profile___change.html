@@ -4,12 +4,17 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile</title>
-<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Profile.css"/>
-<script id="applicationScript" type="text/javascript" src="Profile.js"></script>
+<title>Profile – change</title>
+
+<link rel="icon" href="LOGO/icon2.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Profile___change.css"/>
+<script id="applicationScript" type="text/javascript" src="Profile___change.js"></script>
 </head>
 <body>
-<div id="Profile">
+<div id="Profile__change">
 	<svg class="Ellipse_41">
 		<ellipse id="Ellipse_41" rx="327" ry="325.5" cx="327" cy="325.5">
 		</ellipse>
@@ -26,48 +31,6 @@
 		<rect id="Rectangle_4" rx="20" ry="20" x="0" y="0" width="1072" height="731">
 		</rect>
 	</svg>
-	<div id="profile">
-		<span>profile</span>
-	</div>
-	<div id="">
-		<span></span>
-	</div>
-	<img id="foto_orang" src="foto_orang.png" srcset="foto_orang.png 1x, foto_orang@2x.png 2x">
-	<div id="Group_13">
-		<div id="Group_7">
-			<svg class="Rectangle_8">
-				<rect id="Rectangle_8" rx="25.5" ry="25.5" x="0" y="0" width="104" height="51">
-				</rect>
-			</svg>
-		</div>
-		<div id="Submit">
-			<span>Submit</span>
-		</div>
-	</div>
-	<div onclick="application.goToTargetView(event)" id="Group_34">
-		<div id="Group_7_">
-			<svg class="Rectangle_8_">
-				<rect id="Rectangle_8_" rx="25.5" ry="25.5" x="0" y="0" width="104" height="51">
-				</rect>
-			</svg>
-		</div>
-		<div id="Change">
-			<span>Change</span>
-		</div>
-	</div>
-	<img onclick="application.goToTargetView(event)" id="home" src="home.png" srcset="home.png 1x, home@2x.png 2x">
-	<div id="Fullname">
-		<span>Fullname</span>
-	</div>
-	<div id="Username">
-		<span>Username</span>
-	</div>
-	<div id="Access">
-		<span>Access</span>
-	</div>
-	<div id="Role">
-		<span>Role</span>
-	</div>
 	<svg class="Rectangle_5">
 		<rect id="Rectangle_5" rx="22" ry="22" x="0" y="0" width="252" height="44">
 		</rect>
@@ -84,24 +47,6 @@
 		<rect id="Rectangle_15" rx="22" ry="22" x="0" y="0" width="252" height="44">
 		</rect>
 	</svg>
-	<div id="Katy_Perry">
-		<span>Katy Perry</span>
-	</div>
-	<div id="Katy2020">
-		<span>Katy2020</span>
-	</div>
-	<div id="Full_Maps">
-		<span>Full Maps</span>
-	</div>
-	<div id="Viewer">
-		<span>Viewer</span>
-	</div>
-	<div id="Password">
-		<span>Password</span>
-	</div>
-	<div id="Verify_pass">
-		<span>Verify pass</span>
-	</div>
 	<svg class="Rectangle_19">
 		<rect id="Rectangle_19" rx="22" ry="22" x="0" y="0" width="252" height="44">
 		</rect>
@@ -110,12 +55,76 @@
 		<rect id="Rectangle_20" rx="22" ry="22" x="0" y="0" width="252" height="44">
 		</rect>
 	</svg>
-	<div id="_bk">
-		<span>*********</span>
+	<img id="foto_orang" src="foto_orang.png" srcset="foto_orang.png 1x, foto_orang@2x.png 2x">
+
+
+	<div onclick="application.goToTargetView(event)" id="Group_13">
+		<div id="Group_7">
+			<svg class="Rectangle_8">
+				<rect id="Rectangle_8" rx="25.5" ry="25.5" x="0" y="0" width="104" height="51">
+				</rect>
+			</svg>
+		</div>
+
+
+<!--
+		<div id="Submit">
+			<span>Submit</span>
+		</div>
+-->
+
+
 	</div>
-	<div id="_bl">
-		<span>*********</span>
+	<div id="Group_34">
+		<div id="Group_7_">
+			<svg class="Rectangle_8_">
+				<rect id="Rectangle_8_" rx="25.5" ry="25.5" x="0" y="0" width="104" height="51">
+				</rect>
+			</svg>
+		</div>
+		<div id="Change">
+			<span>Change</span>
+		</div>
 	</div>
+	<img onclick="application.goToTargetView(event)" id="home" src="home.png" srcset="home.png 1x, home@2x.png 2x">
+	<div id="profile">
+		<span>profile</span>
+	</div>
+	<div id="Fullname">
+    <span>Fullname</span>
+           <form class="masuk" method="post" action="Profile_change.php">
+            <input type="text" name="fullname_baru" id="hurup" placeholder="Fullname" required>
+            <br><br>
+            <input type="text" name="username_baru" id="hurup1" placeholder="Username" required>
+            <br><br>
+            <input type="password" id="hurup2" placeholder="Password" required>
+            <br><br>
+            <input type="password" id="hurup3" placeholder="Verify" required>
+            <br><br>
+            <input type="text" name="email_baru" id="hurup4" placeholder="Access" required>
+            <br><br>
+            <input type="text" name="fnama" id="hurup5" placeholder="Role" required>
+
+        <input type="submit" value="Submit" id="Submit" name="submit">
+        </form>
+	</div>
+	<div id="Username">
+		<span>Username</span>
+	</div>
+    <div id="Password">
+		<span>Password</span>
+	</div>
+	<div id="Verify_pass">
+		<span>Verify pass</span>
+	</div>
+	<div id="Access">
+		<span>Email</span>
+	</div>
+	<div id="Role">
+		<span>Role</span>
+
+	</div>
+
 	<div id="Group_43">
 		<svg class="Path_138" viewBox="600.124 628.638 32.021 48.746">
 			<path id="Path_138" d="M 632.14501953125 673.5369873046875 L 620.5040283203125 677.3839721679688 L 600.1240234375 634.3159790039063 L 617.3049926757813 628.6380004882813 L 632.14501953125 673.5369873046875 Z">

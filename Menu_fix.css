@@ -80,6 +80,11 @@ html,body,head{
 	--web-action-target: Log_in.html;
 	cursor: pointer;
 }
+
+#profil :hover{
+ color: whitesmoke;
+}
+
 #_ {
 	left: 1646px;
 	top: 165px;
